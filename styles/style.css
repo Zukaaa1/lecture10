@@ -118,6 +118,21 @@ header {
   gap: 56px;
 }
 
+.burger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333333;
+}
+
+/* Main */
+
 main {
   display: flex;
   justify-content: center;
@@ -153,8 +168,13 @@ section {
   header {
     background-color: red;
   }
-
   nav {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  .headerContainer {
     display: none;
   }
 }
@@ -163,10 +183,10 @@ section {
 
 @media (max-width: 1440px) {
   .headerContainer {
-    padding: 0px 10%;
+    padding: 0px 5%;
   }
 
   .mainContainer {
-    padding: 0px 10%;
+    padding: 0px 5%;
   }
 }
